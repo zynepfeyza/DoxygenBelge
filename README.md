@@ -154,7 +154,7 @@ doxygen
 Tamamlandığında, projeniz için oluşturduğu tüm HTML tabanlı belgelerinizi içeren bir html dizini oluşturduğunu görmelisiniz.
 
 ## Oluşturulan Belgeleri Görüntüleme
-html dizininde bulunan index.html dosyasını tarayıcınızda açın. Bu ana proje sayfasıdır ve `person.py` programımızdaki komutu içeren yorum bloğunda belirttiğimiz tüm bilgileri bölümlere ayırarak görüntüler.
+`html` dizininde bulunan `index.html` dosyasını tarayıcınızda açın. Bu ana proje sayfasıdır ve `person.py` programımızdaki komutu içeren yorum bloğunda belirttiğimiz tüm bilgileri bölümlere ayırarak görüntüler.
 
 ## ÖZET
 Python tabanlı bir proje için Doxygen yardımcı programını kullanarak kaynak kodundan proje dokümantasyonunu nasıl oluşturacağımızı öğrendik. Sadece başkalarına kodunuzu daha kolay anlamaları için araçlar sağlamakla kalmaz, aynı zamanda bir süredir o kod üzerinde çalışmamış orijinal programcıya da yardımcı olabilir.

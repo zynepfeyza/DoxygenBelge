@@ -33,7 +33,7 @@ class Person:
 
 `person.py` dosyamızın çalıştırılabilir bir dosya olmasını sağlamak için aşağıdaki komut kullanılır. Bu komut dosya izinlerini değiştirmek için kullanılır. Dosya üzerinde hangi kullanıcıların hangi işlemleri yapabileceğini belirler. Bu komutta, `person.py` dosyasına tüm kullanıcılar için çalıştırma izni veririz.
 ```sh
-sudo chmod a+x person.py
+sudo chmod a+x src/person.py
 ```
 ve sonra dosyayı bu komutu girerek çalıştırırız.
 ```sh
@@ -49,11 +49,13 @@ DoxygenBelge/
 ```
  Kaynak kodu etkili bir şekilde analiz edip proje belgelerimizi oluşturabilmek için Doxygen, bir yapılandırma dosyasına ihtiyaç duyar. Bu dosya varsayılan olarak `Doxyfile` olarak adlandırılır ve burada proje ile ilgili bilgileri gireriz ve Doxygen'e Python kodunu nasıl işleyeceğini söyleriz.
 
- Komut penceresi içinde `doxygen` dizinine gidin ve aşağıdaki komutu çalıştırarak varsayılan bir Doxygen yapılandırma dosyası oluşturun.
+ Komut penceresi içinde `doxygen` dizinine gidin ve aşağıdaki komutu çalıştırarak varsayılan bir `Doxyfile` dosyası oluşturun.
  ```sh
  cd doxygen
- doxygen -g
  ```
+ ```sh
+  doxygen -g
+  ```
  Bu komut, geçerli dizin içinde bir `Doxyfile` yapılandırma dosyası oluşturacaktır.
 
 Şimdi Doxyfile dosyasını düzenleyerek proje ile ilgili bilgileri girmemiz gerekiyor. Yapmak istediğimiz ilk değişiklik, Doxygen'e projemizin adını söylemektir. 
@@ -143,7 +145,19 @@ Bu ayarlardan, `OPTIMIZE_OUTPUT_JAVA` ve `INPUT`,Doxygen ile Python kodunu belge
 
 Ayarlar tamamlandığında, güncellenmiş `Doxyfile`  dosyanızı kaydedin.
 
+## Doxygen'i Çalıştırma
+
 Yapılandırma dosyası güncellendiğine göre, Python tabanlı projemiz için HTML tabanlı dokümantasyonu oluşturmak üzere Doxygen'i çalıştıralım. Doxyfile ile aynı dizinde (`doxygen`) , Doxygen yürütülebilir dosyasını çalıştırın.
+```sh
+doxygen
+```
+Tamamlandığında, projeniz için oluşturduğu tüm HTML tabanlı belgelerinizi içeren bir html dizini oluşturduğunu görmelisiniz.
+
+## Oluşturulan Belgeleri Görüntüleme
+html dizininde bulunan index.html dosyasını tarayıcınızda açın. Bu ana proje sayfasıdır ve `person.py` programımızdaki komutu içeren yorum bloğunda belirttiğimiz tüm bilgileri bölümlere ayırarak görüntüler.
+
+## ÖZET
+Python tabanlı bir proje için Doxygen yardımcı programını kullanarak kaynak kodundan proje dokümantasyonunu nasıl oluşturacağımızı öğrendik. Sadece başkalarına kodunuzu daha kolay anlamaları için araçlar sağlamakla kalmaz, aynı zamanda bir süredir o kod üzerinde çalışmamış orijinal programcıya da yardımcı olabilir.
 
 
 

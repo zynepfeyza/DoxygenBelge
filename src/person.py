@@ -34,7 +34,7 @@ class Person:
         return f"Merhaba, benim adım {self.name} ve {self.age} yaşındayım."
 
 # Person sınıfını kullanarak bir nesne oluşturun
-person1 = Person("Ali", 30)
+person1 = Person("Zeynep", 22)
 
 # Nesnenin greet metodunu çağırın
 print(person1.greet())

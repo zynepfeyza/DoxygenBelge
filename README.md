@@ -2,6 +2,13 @@
 
 Bu proje, bir Python uygulamasının belgelenmesi için örnek bir Doxygen yapılandırması sunmaktadır.
 
+## Giriş
+Kod yazdığımızda iki temel kitle için yazarız: kendimiz de dahil geliştiriciler ve kullanıcılar. Belgelendirme, kodun ne yaptığını ve nasıl çalıştığını açıklayan notlar ve açıklamalar eklemeyi içerir. Aynı zamanda kullanıcılarınıza kullanımını ve işlevselliğini tanımlamaktır. Geliştirme sürecinde yardımcı olabilirken, asıl hedef kitle kullanıcılardır.
+
+Kodlarımızı dokümante ederek daha kolay anlaşılmasını ve geri dönüp baktığımızda ya da projeye yabancı biri baktığında, proje hakkında fikir sahibi olabilmeyi sağlar.
+
+Doxygen, kaynak kodundan program dokümantasyonu üreten bir yardımcı programdır. Çeşitli programlama dillerinde yazılmış ve belirli yorumlama stilleriyle ek açıklamalar eklenmiş programları ayrıştırır. 
+
 ## Doxygen Kurulumu
 Belgelendirmeyi oluşturabilmeniz için Doxygen'i yüklemelisiniz. Linux işletim sistemi ile çalıştığım için aşağıdaki komutu kullandım.
 ```sh
@@ -19,17 +26,26 @@ Benim versiyonum aşağıdaki gibi görünüyor.
 Doxygen kullanarak kaynak kodundan belge oluşturabilmek için öncelikle kaynak koda sahip olmamız gerekiyor `DoxygenBelge` adında bir proje dizini oluşturalım. Bu dizinin altında bir `src` dizini oluşturalım. Kaynak kodumuzu buraya yerleştireceğiz. `src` dizininin içinde, `person.py` adında bir Python programı oluşturalım.
 ```sh
 class Person:
-    """
-    @class Person
-    @brief Bir kişiyi temsil eden sınıf.
-    
-    Bu sınıf, bir kişiyi temsil eder ve kişinin adını ve yaşını saklar.
+    ## @brief Person sınıfının yapıcı metodu.
+    # @param name Kişinin adı.
+    # @param age Kişinin yaşı.
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
     """
     .
     .
     .
 ```
-## BURAYA @ # NE ANLAMA GELİYOR AÇIKLA
+```
+`@file`: Bir dosyanın tanımını ve amacını açıklar.
+`@class`: Sınıfın açıklaması ve işlevi hakkında bilgi verir.
+`@brief`: Bir modül, sınıf veya fonksiyon için kısa bir açıklama sağlar.
+`@param`: Bir fonksiyonun parametrelerini açıklar.
+`@return`: Bir fonksiyonun dönüş değerini açıklar.
+`@mainpage`: Belgenin ana sayfasını tanımlar ve proje genel bakışını sunar.
+`@section`: Belgelerde içeriği düzenlemek için bölümler oluşturur.
+```
 
 `person.py` dosyamızın çalıştırılabilir bir dosya olmasını sağlamak için aşağıdaki komut kullanılır. Bu komut dosya izinlerini değiştirmek için kullanılır. Dosya üzerinde hangi kullanıcıların hangi işlemleri yapabileceğini belirler. Bu komutta, `person.py` dosyasına tüm kullanıcılar için çalıştırma izni veririz.
 ```sh

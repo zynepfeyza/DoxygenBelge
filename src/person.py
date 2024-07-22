@@ -1,40 +1,31 @@
 ## @file person.py
-# @brief Person sınıfını tanımlar.
-#
-# @section description_person Açıklama
-# Bir isme ve yaşa sahip bir kişiyi temsil eden basit bir sınıf.
-#
-# @section libraries_person Kütüphaneler/Modüller
-# - Yok.
-#
-# @section author_person Yazar(lar)
-# - [Adınız] tarafından [Tarih] tarihinde oluşturulmuştur.
-# - [Adınız] tarafından [Tarih] tarihinde değiştirilmiştir.
-#
-# @section notes_person Notlar
-# - Yorumlar Doxygen uyumludur.
-#
-# @section todo_person Yapılacaklar
-# - Yok.
-
-## @brief Bir kişiyi temsil eden sınıf.
-#
-# Person sınıfı hakkında daha fazla ayrıntı.
+## @brief Doxygen tarzı yorumlara sahip örnek Python programı.
+##
+## @section description_person Person Sınıfı
+## Person sınıfı, kişilerin bilgilerini temsil eder.
+##
+## @section usage_person Kullanım
+## Bu sınıf, kişisel bilgileri almak ve selamlaşma mesajı döndürmek için kullanılabilir.
 class Person:
-    ## @brief Person sınıfının yapıcı metodu.
-    # @param name Kişinin adı.
-    # @param age Kişinin yaşı.
+    ## @brief Person sınıfı
+    ##
+    ## Kişi bilgilerini temsil eden sınıf.
     def __init__(self, name, age):
+        ## @brief Sınıfın yapıcı metodu
+        ##
+        ## @param name Kişinin ismi.
+        ## @param age Kişinin yaşı.
         self.name = name
         self.age = age
 
-    ## @brief Selamlama metodu.
-    # @return Selamlaşma metni.
+    ## @brief Kişisel bir selamlaşma mesajı döndürür.
+    ##
+    ## @return Selamlaşma mesajı.
     def greet(self):
         return f"Merhaba, benim adım {self.name} ve {self.age} yaşındayım."
 
-# Person sınıfını kullanarak bir nesne oluşturun
+# Person sınıfını kullanarak bir nesne oluşturulur
 person1 = Person("Zeynep", 22)
 
-# Nesnenin greet metodunu çağırın
+# Nesnenin greet metodunu çağırılır
 print(person1.greet())

@@ -102,13 +102,16 @@ JAVADOC_AUTOBRIEF      = NO
 JAVADOC_AUTOBRIEF      = YES
 ```
 Kodumdaki Javadoc tarzı yorum örnekleri
-```
-# Person sınıfı hakkında daha fazla ayrıntı.
+```sh
 class Person:
-    ## @brief Person sınıfının yapıcı metodu.
-    # @param name Kişinin adı.
-    # @param age Kişinin yaşı.
+    ## @brief Person sınıfı
+    ##
+    ## Kişi bilgilerini temsil eden sınıf.
     def __init__(self, name, age):
+        ## @brief Sınıfın yapıcı metodu
+        ##
+        ## @param name Kişinin ismi.
+        ## @param age Kişinin yaşı.
         self.name = name
         self.age = age
 ```

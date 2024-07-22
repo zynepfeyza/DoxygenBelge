@@ -143,7 +143,7 @@ Bu ayarlardan, `OPTIMIZE_OUTPUT_JAVA` ve `INPUT`,Doxygen ile Python kodunu belge
 
 Ayarlar tamamlandığında, güncellenmiş `Doxyfile`  dosyanızı kaydedin.
 
-
+Yapılandırma dosyası güncellendiğine göre, Python tabanlı projemiz için HTML tabanlı dokümantasyonu oluşturmak üzere Doxygen'i çalıştıralım. Doxyfile ile aynı dizinde (`doxygen`) , Doxygen yürütülebilir dosyasını çalıştırın.
 
 
 

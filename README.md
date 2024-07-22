@@ -37,8 +37,12 @@ class Person:
         self.name = name
         self.age = age
 ```
+`"""` veya `'''` ile başlayan yorum blokları, Python kodu için özel komutları desteklemez ve metni olduğu gibi gösterir. Bu yüzden `##` veya `##<` gibi Doxygen'in özel komutlarını destekleyen yorum bloklarını kullanabilirsiniz.
+
+
+Örnekte kullanılan bazı temel Doxygen öğeleri:
 ```
-## file: Bir dosyanın tanımını ve amacını açıklar.
+## @file: Bir dosyanın tanımını ve amacını açıklar.
 
 ## @class: Sınıfın açıklaması ve işlevi hakkında bilgi verir.
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name_3',['name',['../classperson_1_1Person.html#ab74e6bf80237ddc4109968cedc58c151',1,'person::Person']]]
+  ['greet_3',['greet',['../classperson_1_1Person.html#a9886908338e327fee8a25781863c11c6',1,'person::Person']]]
 ];

@@ -26,25 +26,31 @@ Benim versiyonum aşağıdaki gibi görünüyor.
 Doxygen kullanarak kaynak kodundan belge oluşturabilmek için öncelikle kaynak koda sahip olmamız gerekiyor `DoxygenBelge` adında bir proje dizini oluşturalım. Bu dizinin altında bir `src` dizini oluşturalım. Kaynak kodumuzu buraya yerleştireceğiz. `src` dizininin içinde, `person.py` adında bir Python programı oluşturalım.
 ```sh
 class Person:
-    ## @brief Person sınıfının yapıcı metodu.
-    # @param name Kişinin adı.
-    # @param age Kişinin yaşı.
+    ## @brief Person sınıfı
+    ##
+    ## Kişi bilgilerini temsil eden sınıf.
     def __init__(self, name, age):
+        ## @brief Sınıfın yapıcı metodu
+        ##
+        ## @param name Kişinin ismi.
+        ## @param age Kişinin yaşı.
         self.name = name
         self.age = age
-    """
-    .
-    .
-    .
 ```
 ```
-`@file`: Bir dosyanın tanımını ve amacını açıklar.
-`@class`: Sınıfın açıklaması ve işlevi hakkında bilgi verir.
-`@brief`: Bir modül, sınıf veya fonksiyon için kısa bir açıklama sağlar.
-`@param`: Bir fonksiyonun parametrelerini açıklar.
-`@return`: Bir fonksiyonun dönüş değerini açıklar.
-`@mainpage`: Belgenin ana sayfasını tanımlar ve proje genel bakışını sunar.
-`@section`: Belgelerde içeriği düzenlemek için bölümler oluşturur.
+## file: Bir dosyanın tanımını ve amacını açıklar.
+
+## @class: Sınıfın açıklaması ve işlevi hakkında bilgi verir.
+
+## @brief: Bir modül, sınıf veya fonksiyon için kısa bir açıklama sağlar.
+
+## @param: Bir fonksiyonun parametrelerini açıklar.
+
+## @return: Bir fonksiyonun dönüş değerini açıklar.
+
+## @mainpage: Belgenin ana sayfasını tanımlar ve proje genel bakışını sunar.
+
+## @section: Belgelerde içeriği düzenlemek için bölümler oluşturur.
 ```
 
 `person.py` dosyamızın çalıştırılabilir bir dosya olmasını sağlamak için aşağıdaki komut kullanılır. Bu komut dosya izinlerini değiştirmek için kullanılır. Dosya üzerinde hangi kullanıcıların hangi işlemleri yapabileceğini belirler. Bu komutta, `person.py` dosyasına tüm kullanıcılar için çalıştırma izni veririz.

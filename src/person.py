@@ -1,11 +1,17 @@
-## @file person.py
-## @brief Doxygen tarzı yorumlara sahip örnek Python programı.
+#
+## @mainpage Doxygen Örneği Prejesi
+#
+## @section description_main Açıklama
+# Doxygen ile kaynak kodu belgeleri oluşturmak için Doxygen tarzı yorumların
+# nasıl kullanılacağını gösteren örnek bir Python programı.
+#
+## @section notes_main Notlar
+# - Doxygen kurulumu, komutları, yapılandırma dosyası oluşturma gibi işlemler gerçekleştirildi.
+
 ##
-## @section description_person Person Sınıfı
-## Person sınıfı, kişilerin bilgilerini temsil eder.
-##
-## @section usage_person Kullanım
-## Bu sınıf, kişisel bilgileri almak ve selamlaşma mesajı döndürmek için kullanılabilir.
+# @file person.py
+#
+# @brief Doxygen tarzı yorumlara sahip örnek Python programı.
 class Person:
     ## @brief Person sınıfı
     ##
@@ -24,8 +30,8 @@ class Person:
     def greet(self):
         return f"Merhaba, benim adım {self.name} ve {self.age} yaşındayım."
 
-# Person sınıfını kullanarak bir nesne oluşturulur
+# Person sınıfını kullanarak bir nesne oluşturun
 person1 = Person("Zeynep", 22)
 
-# Nesnenin greet metodunu çağırılır
+# Nesnenin greet metodunu çağırın
 print(person1.greet())

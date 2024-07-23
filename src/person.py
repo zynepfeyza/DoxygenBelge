@@ -1,5 +1,5 @@
 #
-## @mainpage Doxygen Örneği Prejesi
+## @mainpage Doxygen Örneği Projesi
 #
 ## @section description_main Açıklama
 # Doxygen ile kaynak kodu belgeleri oluşturmak için Doxygen tarzı yorumların

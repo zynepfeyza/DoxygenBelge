@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['doxygen_20Örneği_20prejesi_17',['Doxygen Örneği Prejesi',['../index.html',1,'']]]
+  ['doxygen_20Örneği_20projesi_17',['Doxygen Örneği Projesi',['../index.html',1,'']]]
 ];

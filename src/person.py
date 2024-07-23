@@ -14,7 +14,7 @@
 # @brief Doxygen tarzı yorumlara sahip örnek Python programı.
 ##
 
-## @brief Person sınıfı
+## @brief Person sınıfı, kişi bilgilerini temsil eden sınıf.
 ##
 # Kişi bilgilerini temsil eden sınıf.
 class Person:

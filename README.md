@@ -26,14 +26,12 @@ Benim versiyonum aşağıdaki gibi görünüyor.
 Doxygen kullanarak kaynak kodundan belge oluşturabilmek için öncelikle kaynak koda sahip olmamız gerekiyor `DoxygenBelge` adında bir proje dizini oluşturalım. Bu dizinin altında bir `src` dizini oluşturalım. Kaynak kodumuzu buraya yerleştireceğiz. `src` dizininin içinde, `person.py` adında bir Python programı oluşturalım.
 ```sh
 class Person:
-    ## @brief Person sınıfı
+    ## @brief Person sınıfının yapıcı metodu
     ##
-    ## Kişi bilgilerini temsil eden sınıf.
+    ## @param name Kişinin ismi.
+    ## @param age Kişinin yaşı.
     def __init__(self, name, age):
-        ## @brief Sınıfın yapıcı metodu
-        ##
-        ## @param name Kişinin ismi.
-        ## @param age Kişinin yaşı.
+       
         self.name = name
         self.age = age
 ```
@@ -104,14 +102,12 @@ JAVADOC_AUTOBRIEF      = YES
 Kodumdaki Javadoc tarzı yorum örnekleri
 ```sh
 class Person:
-    ## @brief Person sınıfı
+    ## @brief Person sınıfının yapıcı metodu
     ##
-    ## Kişi bilgilerini temsil eden sınıf.
+    ## @param name Kişinin ismi.
+    ## @param age Kişinin yaşı.
     def __init__(self, name, age):
-        ## @brief Sınıfın yapıcı metodu
-        ##
-        ## @param name Kişinin ismi.
-        ## @param age Kişinin yaşı.
+       
         self.name = name
         self.age = age
 ```

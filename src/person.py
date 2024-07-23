@@ -12,21 +12,24 @@
 # @file person.py
 #
 # @brief Doxygen tarzı yorumlara sahip örnek Python programı.
+##
+
+## @brief Person sınıfı
+##
+# Kişi bilgilerini temsil eden sınıf.
 class Person:
-    ## @brief Person sınıfı
+    ## @brief Person sınıfının yapıcı metodu
     ##
-    ## Kişi bilgilerini temsil eden sınıf.
+    ## @param name Kişinin ismi.
+    ## @param age Kişinin yaşı.
     def __init__(self, name, age):
-        ## @brief Sınıfın yapıcı metodu
-        ##
-        ## @param name Kişinin ismi.
-        ## @param age Kişinin yaşı.
+       
         self.name = name
         self.age = age
-
+        
     ## @brief Kişisel bir selamlaşma mesajı döndürür.
     ##
-    ## @return Selamlaşma mesajı.
+    # @return Selamlaşma mesajı.
     def greet(self):
         return f"Merhaba, benim adım {self.name} ve {self.age} yaşındayım."
 

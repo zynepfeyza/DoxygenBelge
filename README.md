@@ -78,7 +78,7 @@ DoxygenBelge/
  cd doxygen
  ```
  ```sh
-  doxygen -g
+ doxygen -g
   ```
  Bu komut, geçerli dizin içinde bir `Doxyfile` yapılandırma dosyası oluşturacaktır.
 
@@ -180,6 +180,9 @@ Tamamlandığında, projeniz için oluşturduğu tüm HTML tabanlı belgeleriniz
 
 ## Oluşturulan Belgeleri Görüntüleme
 `html` dizininde bulunan `index.html` dosyasını tarayıcınızda açın. Bu ana proje sayfasıdır ve `person.py` programımızdaki komutu içeren yorum bloğunda belirttiğimiz tüm bilgileri bölümlere ayırarak görüntüler.
+```sh
+xdg-open html/index.html 
+```
 
 ## ÖZET
 Python tabanlı bir proje için Doxygen yardımcı programını kullanarak kaynak kodundan proje dokümantasyonunu nasıl oluşturacağımızı öğrendik. Sadece başkalarına kodunuzu daha kolay anlamaları için araçlar sağlamakla kalmaz, aynı zamanda bir süredir o kod üzerinde çalışmamış orijinal programcıya da yardımcı olabilir.
